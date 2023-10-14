@@ -1,0 +1,18 @@
+openapi : 3.0.1
+info :
+  title: "expenseTracker"
+  version : 1.0.0
+  description: "to track expense records"
+  contact:
+    name: "souvik"
+    email: "deysouvik2014@gmail.com"
+servers:
+  - url: '/finance'
+paths:
+  '/check':
+    get:
+      description: "to check system is up or down"
+      responses:
+        "200":
+          description: "success"
+          content: {}
