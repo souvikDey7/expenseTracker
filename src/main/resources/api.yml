@@ -8,11 +8,45 @@ info :
     email: "deysouvik2014@gmail.com"
 servers:
   - url: '/finance'
+tags:
+  - name: 'monitoring'
 paths:
   '/check':
     get:
-      description: "to check system is up or down"
+      tags: 
+        - 'monitoring'
+      description: "to check system is up or not"
+      operationId: check
       responses:
-        "200":
+        200:
           description: "success"
-          content: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/success'
+        400:
+          description: "error"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'          
+        500:
+          description: "error"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'          
+components:
+  schemas:
+    success:
+      type: object
+      properties:
+        successDesription:
+          type: string
+    error:
+      type: object
+      properties:
+        errorDescription:
+          type: string
+        errorCode:
+          type: number

@@ -15,7 +15,7 @@
 	<name>Finance</name>
 	<description>Finance tracker website</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -88,6 +88,7 @@
 						<goals>
 							<goal>generate</goal>
 						</goals>
+						<phase>generate-sources</phase>
 						<configuration>
 							<inputSpec>${project.basedir}/src/main/resources/api.yml</inputSpec>
 							<generatorName>spring</generatorName>
@@ -96,8 +97,8 @@
 							<configOptions>
 								<sourceFolder>Finance</sourceFolder>
 								<interfaceOnly>true</interfaceOnly>
-								<dateLibrary>java11</dateLibrary>
-								<interfaceOnly>true</interfaceOnly>
+								<method>public</method>
+								<dateLibrary>java8</dateLibrary>
 							</configOptions>
 							<output>${project.build.directory}/generatedCode</output>
 						</configuration>
