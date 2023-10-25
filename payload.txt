@@ -1,0 +1,32 @@
+[{
+   "cat": "food"
+   "year": [{
+	"month": "January"
+	"yearNumeric": 2023
+   	"data": [{
+		"budget": 1000
+   		"expense": [{
+      			"spent": 500
+         		"date": 10/1/2023
+            		},
+            		{
+         		"spent": 200
+         		"date": 12/1/2023
+                	}
+         	}]
+	},{
+	"month": "Feb"
+	"yearNumeric": 2023
+   	"data": [{
+		"budget": 2000
+   		"expense": [{
+      			"spent": 900
+         		"date": 1/2/2023
+            		},
+            		{
+         		"spent": 100
+         		"date": 10/2/2023
+                	}
+         	}]
+	}]
+}]
