@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Document(collation = "ExpensePeriodDao")
+@Document(collection = "ExpensePeriodDao")
 public class ExpensePeriodDao {
 
 	private String month;

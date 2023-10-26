@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@Document(collation = "ExpenseData")
+@Document(collection  = "ExpenseData")
 public class IndividualExpenseDataDao {
 
 	private Integer spentAmount;

@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Document(collation = "Expense")
+@Document(collection = "Expense")
 public class ExpenseDao {
 	private String category;
 	private List<ExpensePeriodDao> expensePeriodDaos;
